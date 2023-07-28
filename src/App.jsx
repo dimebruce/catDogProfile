@@ -42,7 +42,7 @@ function App() {
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-md-12 col-xl-4">
-              <h1 className="text-white mb-3">catDog Perfil 🐾</h1>
+              <h1 className="text-white mb-3">catDog Perfil <i className="bi bi-qr-code"></i></h1>
               <div className="card" style={{ borderRadius: "15px" }}>
                 <div className="card-body text-center">
                   <div className="mt-3 mb-4">
