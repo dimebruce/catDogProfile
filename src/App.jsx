@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import profile from "./assets/profile.png";
+import profile from "./assets/profileDos.png";
 
 import "./App.css";
 
@@ -8,8 +8,8 @@ function App() {
   //                                          DD-MM-YYYY
   const [birthDate, setBirthDate] = useState("06-06-2021");
   const [age, setAge] = useState("");
-  const [race, setRace] = useState("Ratonero");
-  const [owner, setOwner] = useState("Paco")
+  const [race, setRace] = useState("Pomerania");
+  const [owner, setOwner] = useState("Curie");
 
   useEffect(() => {
     calculateAge();
@@ -48,14 +48,14 @@ function App() {
                   <div className="mt-3 mb-4">
                     <img
                       src={profile}
-                      className="rounded-circle img-fluid"
+                      className="rounded-circle img-fluid shadow"
                       style={{ width: "200px" }}
                       alt="Profile Avatar"
                     />
                   </div>
-                  <h4 className="mb-2">Hola, soy {name}</h4>
+                  <h4 className="mb-1">Hola, soy {name}</h4>
                   <h6 className="text-muted">{race}</h6>
-                  <p className="text-muted">
+                  <p className="text-muted mt-3 shado">
                     Soy tranquilo y amigable, tengo {age} años y algunas
                     alergias, pero eso no me impide disfrutar de la vida. 🐶🏠
                   </p>
@@ -106,13 +106,48 @@ function App() {
                         </div>
                       </div>
                     </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Observaciones
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          Bajo tratamiento por luxación de rótula.
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h6>Contacta a mi humano <br /><span className="fs-5">{owner}</span></h6>
+                  <h6>
+                    Contacta a mi humano <br />
+                    <span className="fs-5 shado">{owner}</span>
+                  </h6>
                   <div className="container mt-3">
-                    <a href="https://wa.link/w7sb73" className="btn btn-outline-primary me-3" target="_blank">
+                    <a
+                      href="https://wa.link/a4gv5f"
+                      className="btn btn-outline-primary me-3"
+                      target="_blank"
+                    >
                       <i className="bi bi-whatsapp fs-3"></i>
                     </a>
-                    <a href="https://www.instagram.com/dimebruce" className="btn btn-outline-primary" target="_blank">
+                    <a
+                      href="https://www.instagram.com/dimebruce"
+                      className="btn btn-outline-primary"
+                      target="_blank"
+                    >
                       <i className="bi bi-instagram fs-3"></i>
                     </a>
                   </div>
@@ -120,7 +155,7 @@ function App() {
                     <footer className="my-4">
                       <ul className="nav justify-content-center border-bottom pb-3 mb-3"></ul>
                       <p className="text-center text-muted">
-                        © 2023 Hecho por{" "}
+                        © 2023 Creado por{" "}
                         <a href="https://www.instagram.com/dimebruce">
                           dimebruce
                         </a>{" "}
